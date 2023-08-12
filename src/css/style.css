@@ -1,0 +1,93 @@
+.container{
+    background-color: #f7f7f7;
+    display: grid;
+    grid-template-areas: 
+    "principal   propaganda"
+    "principal   side";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+    max-width: 900px;
+    padding: 35px;
+    gap: 20px;
+}
+
+.container .principal{
+    grid-area: principal;
+}
+
+.container .propaganda{
+    grid-area: propaganda;
+}
+
+.container .side{
+    grid-area: side;
+}
+
+.container .propaganda{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .principal img{
+    width: 100%;
+}
+
+.container .principal .info h1{
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.container .principal .info p:nth-child(2){
+    font-size: 14px;
+    margin-top: 7px;
+    letter-spacing: 1px;
+}
+
+.container .principal .info p:nth-child(3){
+    font-size: 16px;
+    margin-top: 7px;
+    font-weight: 400;
+}
+
+.container .propaganda .titulo-propaganda{
+    position: absolute;
+    
+}
+
+.container .video-info{
+    display: flex;
+    gap: 5px;
+}
+
+.container .video-info img{
+    margin-bottom: 10px;
+}
+
+.container .side .text-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .side .text-info h2{
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.container .side .text-info p{
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+
+@media(max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
